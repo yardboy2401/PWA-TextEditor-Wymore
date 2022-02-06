@@ -8,7 +8,6 @@
   --navbar-height: 50px;
 }
 
-/* body styling */
 body {
   margin: 0;
   background-color: var(--monoaki);
@@ -21,7 +20,6 @@ h1 {
   font-size: 22px;
 }
 
-/* navbar styling */
 #navbar {
   height: var(--navbar-height);
   background-color: var(--primary);
@@ -39,7 +37,6 @@ h1 {
   padding-top: 10px;
 }
 
-/* loading spinner/container styling */
 .loading-spinner {
   animation-duration: 0.75s;
   animation-iteration-count: infinite;
