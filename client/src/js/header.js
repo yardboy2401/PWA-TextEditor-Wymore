@@ -1,3 +1,4 @@
+//header for app
 const header = `
 /*
        _____  ____________
@@ -9,4 +10,5 @@ just another text editor
 */                          
 `;
 
+//export header
 export { header };
