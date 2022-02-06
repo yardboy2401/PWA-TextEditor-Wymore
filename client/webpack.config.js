@@ -1,40 +1,11 @@
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const WebpackPwaManifest = require('webpack-pwa-manifest');
-// const path = require('path');
-// const { InjectManifest } = require('workbox-webpack-plugin');
-
-// // TODO: Add and configure workbox plugins for a service worker and manifest file.
-// // TODO: Add CSS loaders and babel to webpack.
-
-// module.exports = () => {
-//   return {
-//     mode: 'development',
-//     entry: {
-//       main: './src/js/index.js',
-//       install: './src/js/install.js'
-//     },
-//     output: {
-//       filename: '[name].bundle.js',
-//       path: path.resolve(__dirname, 'dist'),
-//     },
-//     plugins: [
-      
-//     ],
-
-//     module: {
-//       rules: [
-        
-//       ],
-//     },
-//   };
-// };
-
+//requires for plugins/manifest/path
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const {InjectManifest} = require('workbox-webpack-plugin');
 const path = require('path');
 
+//exports for webpack config
 module.exports = {
   mode: 'development',
   entry: './src/js/index.js',
@@ -43,6 +14,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
 
+  //webpack and manifest plugins
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
@@ -75,6 +47,7 @@ module.exports = {
       ]
     }),
   ],
+  //module rules for webpack config
   module: {
     rules: [
       {
