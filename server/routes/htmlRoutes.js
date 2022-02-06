@@ -1,5 +1,5 @@
 //require path module
-const path
+const path = require('path');
 
 //export app route
 module.exports = (app) =>
